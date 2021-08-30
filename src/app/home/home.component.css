@@ -15,8 +15,19 @@ app-photo {
   margin-top: 50px;
 }
 
+@media (max-width: 680px) {
+  header {
+    font-size: 2em;
+  }
+}
+
+
 @media (max-width: 455px) {
   header {
-    font-size: 1.5em;
+    display: none;
+  }
+
+  app-photo {
+    margin-top: 5px;
   }
 }
