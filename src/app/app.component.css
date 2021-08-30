@@ -12,6 +12,7 @@ nav a {
 
 .navigation {
   display: flex;
+  padding-top: 8px;
 }
 
 .logo {
