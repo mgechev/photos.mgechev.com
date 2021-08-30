@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  font-size: 3em;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+app-photo {
+  margin: auto;
+  margin-top: 50px;
+}

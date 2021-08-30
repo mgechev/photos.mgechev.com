@@ -1,0 +1,10 @@
+<div class="column" *ngFor="let column of grid">
+  <app-photo
+    *ngFor="let photo of column"
+    [alt]="photo.alt"
+    [width]="photo.width"
+    [height]="photo.height"
+    [src]="photo.src"
+    [style.margin.px]="margin"
+  ></app-photo>
+</div>

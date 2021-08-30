@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: black;
+  display: block;
+  font-family: 'Urbanist', sans-serif;
+  color: #fff;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
+  text-shadow: 0px 0px 3px #fff;
+  transition: 0.3s text-shadow;
+}

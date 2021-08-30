@@ -1,0 +1,17 @@
+<img
+  [style.display]="loading ? 'none' : 'block'"
+  (error)="onError()"
+  (load)="onLoad()"
+  [src]="src"
+  [style.width.px]="width"
+  [style.height.px]="height"
+  [alt]="alt"
+/>
+<div
+  *ngIf="loading"
+  class="placeholder"
+  [style.width.px]="width"
+  [style.height.px]="height"
+>
+  <div class="loader">Loading...</div>
+</div>

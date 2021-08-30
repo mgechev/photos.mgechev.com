@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  margin: auto;
+  max-width: 1000px;
+  width: 30vw;
+}
+
+a {
+  text-decoration: underline;
+}
+
+img {
+  float: left;
+  height: 150px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
