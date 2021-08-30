@@ -14,3 +14,9 @@ app-photo {
   margin: auto;
   margin-top: 50px;
 }
+
+@media (max-width: 455px) {
+  header {
+    font-size: 1.5em;
+  }
+}

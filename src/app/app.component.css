@@ -43,3 +43,15 @@ footer {
   margin-top: 60px;
   height: 20px;
 }
+
+@media (max-width: 455px) {
+  .separator,
+  .target {
+    display: none;
+  }
+
+  nav a {
+    padding: 5px;
+    margin: 15px;
+  }
+}
