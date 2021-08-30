@@ -15,3 +15,15 @@ img {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 950px) {
+  :host {
+    width: 60vw;
+  }
+}
+
+@media (max-width: 450px) {
+  :host {
+    width: 80vw;
+  }
+}

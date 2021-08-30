@@ -1,5 +1,6 @@
 import { ChangeDetectorRef, Component } from '@angular/core';
 
+const ratio = 922.22 / 1498.19;
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -11,11 +12,17 @@ export class HomeComponent {
   constructor(private _cdr: ChangeDetectorRef) {}
 
   get imageWidth() {
-    return vw(60);
+    const width = vw(90);
+    const height = vh(70);
+    const calculatedWidth = width * ratio;
+    if (calculatedWidth > height) {
+      return height / ratio;
+    }
+    return width;
   }
 
   get imageHeight() {
-    return (this.imageWidth * 922.22) / 1498.19;
+    return this.imageWidth * ratio;
   }
 
   ngOnInit() {
@@ -28,9 +35,17 @@ export class HomeComponent {
 }
 
 const vw = (v: number) => {
-  const h = Math.max(
+  const w = Math.max(
     document.documentElement.clientWidth,
     window.innerWidth || 0
+  );
+  return (v * w) / 100;
+};
+
+const vh = (v: number) => {
+  const h = Math.max(
+    document.documentElement.clientHeight,
+    window.innerHeight || 0
   );
   return (v * h) / 100;
 };
