@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && echo 'photos.mgechev.com' > docs/CNAME",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
