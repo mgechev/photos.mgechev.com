@@ -45,6 +45,12 @@ const config: GridConfig = {
       src: '/assets/painted-ladies.jpg',
     },
     {
+      alt: 'Sunset over the Financial District in San Francisco, California',
+      height: 1033,
+      width: 1500,
+      src: '/assets/fidi-sunset.jpg',
+    },
+    {
       alt: 'View from Russian Hill in San Francisco, California',
       height: 1500,
       width: 1000,
