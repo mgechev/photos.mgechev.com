@@ -51,6 +51,18 @@ const config: GridConfig = {
       src: '/assets/fidi-sunset.jpg',
     },
     {
+      alt: 'Sunrise in NorCal',
+      height: 1000,
+      width: 1500,
+      src: '/assets/sunrise.jpg',
+    },
+    {
+      alt: 'The Orion Nebula',
+      height: 978,
+      width: 1500,
+      src: '/assets/m42.jpg',
+    },
+    {
       alt: 'View from Russian Hill in San Francisco, California',
       height: 1500,
       width: 1000,
